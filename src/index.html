@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <section class='filters'>
+        <a href="index.html" class="logo">
+            Sorting Visualizer
+        </a>
+            <div class='control'>
+                <div>Algorithm: </div>
+                    <select id="select">
+                        <option value="0"></option>
+                        <option value="1">Bubble Sort</option>
+                        <option value="2">Selection Sort</option>
+                        <option value="3">Insertion Sort</option>
+                        <option value="4">Quick Sort</option>
+                        <option value="5">Merge Sort</option>
+                    </select>
+              
+            </div>
+    
+            <div class='control'>
+                <div>Speed: </div>
+                <input type="range" id='rangeSpeed' value=5 min=0 max=9 step=1>
+            </div>
+    
+            <div class='control'>
+                <div>Size: </div>
+                <input type="range" id='rangeSize' value=100 min=50 max=150 step=1>
+            </div>
+
+            <div class="control">
+                <button disabled class='disabled btn' id="skip">Skip</button>
+            </div>
+
+    </section>
+
+    <canvas id="canvas">
+        Your Browser Doesn't Support Canvas
+    </canvas>
+
+</body>
+</html>
